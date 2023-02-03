@@ -1,0 +1,126 @@
+*, *::before, *::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: 62.5%;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+}
+
+button {
+  cursor: pointer;
+}
+
+button, input {
+  border: none;
+  background-color: transparent;
+}
+
+input {
+  outline: none;
+}
+
+.container {
+  width: 90%;
+  height: inherit;
+  margin: 0 auto;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.f-center {
+  justify-content: center;
+  align-items: center;
+}
+
+.forms {
+  width: 100%;
+  position: relative;
+  border-radius: 2rem;
+  box-shadow: 0px 0px 25px 2px rgba(0, 0, 0, 0.25);
+}
+
+.forms__switch {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 50%;
+  background: radial-gradient(48.68% 48.68% at 50% 1.26%, #4DFFCF 0%, #0E8F6D 100%);
+  border-radius: 20px 0px 0px 20px;
+  z-index: 10;
+
+  transition: .5s all ease;
+}
+
+.forms__switch-btn {
+  position: relative;
+  top: 25%;
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 54px;
+  color: #FFFFFF;
+  background: #DB552C;
+  box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.25);
+  border-radius: 20px;
+  padding: .5rem 1rem;
+}
+
+.forms__container {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 5rem;
+  place-items: center;
+  align-items: start;
+  padding: 5rem;
+}
+
+.forms__container > form {
+  width: 100%;
+  height: fit-content;
+}
+
+.forms__container-login , .forms__container-signup {
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.forms__title {
+  font-size: 6.4rem;
+}
+
+.forms__container-fields {
+  width: 100%;
+  flex-direction: column;
+  margin: 6.4rem 0;
+}
+
+.forms__container-fields > input {
+  width: 100%;
+  margin-bottom: 3.6rem;
+  border-bottom: .1rem solid #000;
+  padding-bottom: .5rem;
+  font-size: 1.6rem;
+  font-weight: 500;
+}
+
+.forms__container-btn {
+  background: #2BDBAB;
+  border-radius: 20px;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 48px;
+  color: #fff;
+  padding: .5rem 1rem;
+}
